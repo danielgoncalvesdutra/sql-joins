@@ -2,7 +2,10 @@
 Type of JOINs
 There are four general ways in which to conduct JOINs in SQL queries: INNER, LEFT, RIGHT, and FULL OUTER.
 ![alt text](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/V3K80lLeRfayvNJS3tX2DQ_c5371083976944c7808132ca392f419d_Screen-Shot-2021-02-07-at-5.14.41-PM.png?expiry=1663632000000&hmac=an8_oCE8QT4TKJ8xLlHdnKfUOYWNwkCTSfp2dtoEwx0)
-4 venn diagrams illustrating JOINsThe circles represent left and right tables, and where they are joined is highlighted in blue
+4 venn diagrams illustrating JOINs
+
+The circles represent left and right tables, and where they are joined is highlighted in blue
+
 Here is what these different JOIN queries do.
 
 INNER JOIN
