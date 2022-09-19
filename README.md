@@ -1,4 +1,18 @@
 # sql-joins
+The general JOIN syntax
+
+    SELECT
+        -- table columns from tables are inserted here
+        table_name1.column_name,
+        table_name2.column_name
+    FROM
+        table_name1
+    JOIN
+        table_name2
+    ON table_name1.column_name = table_name2.column_name
+
+As you can see from the syntax, the JOIN statement is part of the FROM clause of the query. JOIN in SQL indicates that you are going to combine data from two tables. ON in SQL identifies how the tables are to be matched for the correct information to be combined from both. 
+
 Type of JOINs
 There are four general ways in which to conduct JOINs in SQL queries: INNER, LEFT, RIGHT, and FULL OUTER.
 ![alt text](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/V3K80lLeRfayvNJS3tX2DQ_c5371083976944c7808132ca392f419d_Screen-Shot-2021-02-07-at-5.14.41-PM.png?expiry=1663632000000&hmac=an8_oCE8QT4TKJ8xLlHdnKfUOYWNwkCTSfp2dtoEwx0)
