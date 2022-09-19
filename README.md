@@ -39,25 +39,25 @@ RIGHT JOIN
 
     -You may see this as RIGHT OUTER JOIN or RIGHT JOIN. RIGHT JOIN returns all records from the right table and the corresponding records from the left table. Practically speaking, RIGHT JOIN is rarely used. Most people simply switch the tables and stick with LEFT JOIN. But using the previous example for LEFT JOIN, the query using RIGHT JOIN would look like the following:
 
-    SELECT
-        sales.sales_rep,
-        customers.customer_name
-    FROM
-        sales
-    RIGHT JOIN
-        customers
-    ON sales.customer_id = customer_id
+        SELECT
+            sales.sales_rep,
+            customers.customer_name
+        FROM
+            sales
+        RIGHT JOIN
+            customers
+        ON sales.customer_id = customer_id
 
 
 FULL OUTER JOIN
 
     -You may sometimes see this as FULL JOIN. FULL OUTER JOIN returns all records from the specified tables. You can combine tables this way, but remember that this can potentially be a large data pull as a result. FULL OUTER JOIN returns all records from both tables even if data isn’t populated in one of the tables. For example, in the query below, you will get all customers and their products’ shipping dates. Because you are using a FULL OUTER JOIN, you may get customers returned without corresponding shipping dates or shipping dates without corresponding customers. A NULL value is returned if corresponding data doesn’t exist in either table.
 
-    SELECT
-        customers.customer_name,
-        orders.ship_date
-    FROM
-        customers
-    FULL OUTER JOIN
-        orders
-    ON customers.customer_id = orders.customer_id
+        SELECT
+            customers.customer_name,
+            orders.ship_date
+        FROM
+            customers
+        FULL OUTER JOIN
+            orders
+        ON customers.customer_id = orders.customer_id
